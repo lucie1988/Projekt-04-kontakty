@@ -9,3 +9,51 @@ body {
 h1 {
 	text-align: center;
 }
+
+
+img {
+	max-width: 100%;
+	border-radius: 50%;
+	margin: 15px
+}
+
+
+.osoba {
+	text-align: center;
+	border: rgb(104, 98, 98) solid 1px;
+	border-radius: 10px;
+	margin: 10px;
+	
+}
+
+
+.popis {
+	padding: 10px;
+
+}
+
+@media (min-width: 540px) {
+	.osoba {
+		display: flex;
+		width: calc(100% / 2 - 20px);
+		justify-content: flex-start;
+		align-items: center;
+		text-align: left;
+	}
+
+	.tym {
+		display: flex;
+		flex-wrap: wrap;
+		
+	}
+	
+}
+
+@media (min-width: 960px) {
+	
+	.osoba {
+		display: block;
+		text-align: center;
+		width: calc(100% / 4 - 20px)
+	}
+}
